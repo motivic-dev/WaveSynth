@@ -3,6 +3,10 @@ WaveSynth
 
 A sine-wave tone generator that lets you choose the number and loudness of its overtones.
 
+Built with JavaScript using the [Web Audio API](http://www.w3.org/TR/webaudio/)
+
+Check out the [demo](http://motivic-dev.com/audtest.html).
+
 ##Creating an instance
 
 ```javascript
