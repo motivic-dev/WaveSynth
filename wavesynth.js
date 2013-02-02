@@ -1,10 +1,10 @@
-WaveSynth = function(partials){
-  var ctx = new webkitAudioContext;
+WaveSynth = function(ctx, partials){
 	this.context = ctx;
 	var wtLength = partials.length + 1;
 	var real = new Float32Array(wtLength);
 	var imag = new Float32Array(wtLength);
-
+	//leave the leading 0 alone, add the amplitudes of the
+	//partials as the imaginary coefficients starting at index 1
 	for (var i = 1; i < partials.length + 1; i++) {
 		imag[i] = partials[i-1];
 	}
